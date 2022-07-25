@@ -5,6 +5,7 @@ const forecast = require('./utils/forecast')
 const geocode = require('./utils/geocode')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //console.log(__dirname)//contains path to the current directory -will use this to get to the public directory
 //console.log(__filename)// contains path to itself
@@ -123,8 +124,8 @@ app.get('*',(req,res)=>{ //* (wild card character): everything else
 //app.com/about
 
 //start the server up: takes 1 required and i optional arg: port number (3000) and asychnronous call back function which runs when the server starts runninh
-app.listen(3000, ()=>{
-    console.log('server is up on port 3000') //doesnt display on the browser
+app.listen(port, ()=>{
+    console.log('server is up on port ' + port) //doesnt display on the browser
 
 })
 //to view on browser: http://localhost:3000

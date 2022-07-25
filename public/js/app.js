@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit',(e) => {//runs everysingle time the form i
    const location = search.value//extracts the vslue from input
    message1.textContent = 'loading message...'
    message2.textContent = ''
-   fetch('http://localhost:3000/weather?address='+location).then((response)=>{
+   fetch('/weather?address='+location).then((response)=>{
     response.json().then((data)=>{
         if (data.error){
             message1.textContent=data.error
