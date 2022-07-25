@@ -1,4 +1,3 @@
-console.log('js')
 
 //making http request from client side javascript - use fetch api - browser based api not part of js
 //fetch takes in a string - url where you trying to get the data from and then method
