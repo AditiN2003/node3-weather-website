@@ -1,1 +1,1 @@
-This website gets the input from the user and finds the weather for that location. This uses a WeatherStack API.
+This project, written in JavaScript and Node.js, uses the WeatherStack API to get input from the user and retrieve the weather for that location.
